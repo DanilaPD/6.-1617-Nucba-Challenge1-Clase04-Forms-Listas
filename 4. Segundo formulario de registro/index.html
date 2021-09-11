@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Registrate</title>
+</head>
+
+<body>
+  <header>
+    <h1>Formulario de registro</h1>
+  </header>
+
+  <main>
+    <form action="/" method="POST">
+      <label class="input-label">Nombre:
+        <input type="text" name="nombre" id="nombre" maxlength="24" minlength="2" />
+      </label>
+
+      <br />
+      <br />
+
+      <label class="input-label">Apellidos:
+        <input type="text" name="apellidos" id="apellidos" maxlength="24" minlength="2" />
+      </label>
+
+      <br />
+      <br />
+
+      <div>
+        Sexo:
+        <label>
+          <input type="radio" name="valor1" id="valor1" />hombre </label>
+        <input type="radio" name="valor2" id="valor2" checked />mujer
+        </label>
+      </div>
+
+      <br />
+      <br />
+
+      <label class="input-label">Correo:
+        <input type="email" name="correo" id="correo" maxlength="30" minlength="2" />
+      </label>
+
+      <br />
+      <br />
+
+      <div>Población:
+        <select name="ciudades" id="ciudades">
+          <option value="alicante" selected>Alicante</option>
+          <option value="barcelona">Barcelona</option>
+          <option value="madrid">Madrid</option>
+          <option value="bilbao">Bilbao</option>
+          <option value="sevilla">Sevilla</option>
+        </select>
+      </div>
+
+      <br>
+      <br>
+
+      <div>Descripción:
+        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+      </div>
+
+      <br />
+      <br />
+
+      <label>
+        <input type="checkbox" value="valor-1" />Deseo recibir información
+        sobre novedades y ofertas
+      </label>
+
+      <br />
+      <br />
+
+      <label>
+        <input type="checkbox" value="valor-2" />Declaro haber leído y aceptar
+        las condiciones generales del programa y la normativa sobre protección
+        de datos
+      </label>
+
+      <br />
+      <br />
+
+      <label>
+        <input type="button" name="button" value="Enviar" />
+      </label>
+    </form>
+  </main>
+</body>
+
+</html>
